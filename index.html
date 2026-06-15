@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation® Official Site: Consoles, Games, Accessories &amp; More </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="playstation.css">
+    <script src="playstation.js" defer></script>
+</head>
+<body>
+    <!-- sony banner -->
+    <div class="sony">
+      <a href="https://www.sony.com/en/" class="sony_text_link"><img src="Sony_logo.svg"alt="Sony Logo" class="Sony_logo"></a>
+    </div>
+    <!-- navigation bar -->
+    <nav class="navigation_bar">
+        <div class="navbar_content">
+            <div class="nav_logo">
+                <a href="https://www.playstation.com/en-in" class="playstation_logo_link"><img src="playstation.svg" alt="playstation logo" class="playstation_logo"></a>
+            </div>
+            <ul class="nav_links">
+                <li><a href="">Games</a></li>
+                <li><a href="">PS5</a></li>
+                <li><a href="">PS4</a></li>
+                <li><a href="">PS Plus</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+            <div class="nav_actions">
+                <a href="https://my.account.sony.com/sonyacct/signin/" class="signin">Sign In</a>
+                <button class="search_btn" id="searchTriggerBtn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="search_backdrop" id="searchBackdrop"></div>
+            <div class="mega_search_bar" id="megaSearchBar">
+                <div class="search_dropdown">
+                    <select>
+                        <option>PlayStation.com</option>
+                        <option>Playstation Store</option>
+                    </select>
+                </div>
+                <input type="text" class="mega_search_input" placeholder="Search PlayStation.com">
+                <button class="mega_search_submit">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                </div>      
+            </div>
+            </div>
+        </div>
+    </nav>
+    <!-- games Ad banner -->
+    <section class="ps-hero-banner">
+        <div class="hero-content">
+            <article class="hero">
+                <div class="hero_content">
+                    <div class="herotag">Play as Wolverine</div>
+                    <div class="herodesc">Experience an all-new, emotionally charged story based on the legendary comic book character, available September 15 on PS5</div>
+                    <a href="https://www.playstation.com/en-in/games/marvels-wolverine/" class="preorder">Pre Order</a>
+                </div>
+                <figure>
+                    <img src="wolverine-keyart-01-en-30sept25.svg" alt="Wolverine">
+                </figure>
+            </article>
+            <article class="hero">
+                <div class="hero_content">
+                    <div class="herotag">Find your way home</div>
+                    <div class="herodesc">Death was supposed to be the end, but for Laufey(Faye), warrior and wife of Kratos, a new adventure is just beginning.</div>
+                    <a href="https://www.playstation.com/en-in/games/god-of-war-laufey/" class="wish">Wishlist now</a>
+                </div>
+                <figure>
+                    <img src="god-of-war-laufey-listing-thumb-01-en-26may26.svg" alt="God">
+                </figure>
+            </article>
+            <article class="hero">
+                <div class="hero_content">
+                    <div class="herotag">Extract and collect Sprites</div>
+                    <div class="herodesc">This season,power isn't given, it's taken. Explore a new, mid-chapter map with twisted takes on familiar POIs</div>
+                    <a href="https://www.playstation.com/en-in/games/fortnite/" class="learn">Learn more</a>
+                </div>
+                <figure>
+                    <img src="Fortnite-CH7-S3-keyart-01-03jun26en.svg" alt="Fortnite">
+                </figure>
+            </article>
+            <article class="hero">
+                <div class="hero_content">
+                    <div class="herotag">Step into the fight</div>
+                    <div class="herodesc">A mysterious ringworld. Humanity's last hope. Halo: Campaign evolved comes to PS5 on July 28</div>
+                    <a href="https://www.playstation.com/en-in/games/halo-campaign-evolved/" class="preorder">Pre Order</a>
+                </div>
+                <figure>
+                    <img src="halo-campaign-evolved-keyart-01-en-10oct25.svg" alt="Halo">
+                </figure>
+            </article>
+            <article class="hero">
+                <div class="hero_content">
+                    <div class="herotag">Adventure beyond legend</div>
+                    <div class="herodesc">Discover the lost secrets of Atlantius with jaw-dropping visuals and modern gameplay in a new reimagining of Lara's debut adventure.</div>
+                    <a href="https://www.playstation.com/en-in/games/tomb-raider-legacy-of-atlantis/" class="preorder">Pre Order</a>
+                </div>
+                <figure>
+                    <img src="tomb-raider-loa-keyart-01-ps5-26may26en.svg" alt="Tomb">
+                </figure>
+            </article>
+        </div>
+    </section>
+    <!-- games carousel thumbnails -->
+    <div class="hero-carousel">
+        <div class="carousel-item active">
+            <img src="wolverine-keyart-01-en-30sept25.svg" alt="Wolverine Thumbnail">
+        </div>
+        <div class="carousel-item">
+            <img src="god-of-war-laufey-listing-thumb-01-en-26may26.svg" alt="God of War Laufey Thumbnail">
+        </div>
+        <div class="carousel-item">
+            <img src="Fortnite-CH7-S3-keyart-01-03jun26en.svg" alt="Fortnite Evolved Thumbnail">
+        </div>
+        <div class="carousel-item">
+            <img src="halo-campaign-evolved-keyart-01-en-10oct25.svg" alt="Halo Campaign Evolved Thumbnail">
+        </div>
+        <div class="carousel-item">
+            <img src="tomb-raider-loa-keyart-01-ps5-26may26en.svg" alt="Tomb Raider Thumbnail">
+        </div>
+    </div>
+
+    <!-- PS5 Accessories Section -->
+    <section class="adsbanner">
+
+        <!-- Main display: left text panel + right large image -->
+        <div class="playsads">
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">PlayStation 5 Console</div>
+                    <div class="contdesc">Experience an all-new generation of incredible PlayStation games.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/ps5/" class="fom">Find out more</a>
+                        <a href="https://www.playstation.com/en-in/ps5/" class="buy">Buy now</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="ps5.svg" alt="PS5">
+                </figure>
+            </article>
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">DualSense™ Wireless Controller</div>
+                    <div class="contdesc">Immerse yourself in the gaming experience with a controller that supports responsive haptic feedback and dynamic trigger effects.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/accessories/dualsense-wireless-controller/" class="fom">Find out more</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="dualsense.svg" alt="DualSense">
+                </figure>
+            </article>
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">PULSE Elite™ Wireless Headset</div>
+                    <div class="contdesc">Enjoy lifelike gaming audio in a comfortable headset design equipped with a retractable microphone and built-in long-life battery.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/accessories/pulse-elite-wireless-headset/" class="fom">Find out more</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="PULSE-Elite-headset-.svg" alt="PULSE Elite Headset">
+                </figure>
+            </article>
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">PULSE Explore™ Wireless Earbuds</div>
+                    <div class="contdesc">Enjoy lifelike gaming audio wherever play takes you with a portable design equipped with hidden microphones and a companion charging case.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/accessories/pulse-explore-wireless-earbuds/" class="fom">Find out more</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="PULSE-Explore-earbuds-image-block-01-en-08sep23.svg" alt="PULSE Explore Earbuds">
+                </figure>
+            </article>
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">DualSense Edge™ Wireless Controller</div>
+                    <div class="contdesc">Get an edge in gameplay with remappable buttons, tuneable triggers and sticks, changeable stick caps, back buttons, and more.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/accessories/dualsense-edge-wireless-controller/" class="fom">Find out more</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="dualsense-edge-featured-hardware-image-block-01-en-11aug23.svg" alt="DualSense Edge">
+                </figure>
+            </article>
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">Access™ Controller</div>
+                    <div class="contdesc">A highly customisable PlayStation®5 controller kit designed to make gaming more accessible.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/accessories/access-controller/" class="fom">Find out more</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="access-controller-featured-hardware-image-block-01-en-12oct23.svg" alt="Access Controller">
+                </figure>
+            </article>
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">PS5 Console Covers</div>
+                    <div class="contdesc">Personalise your PlayStation 5 or PlayStation 5 Digital Edition console with a vibrant array of new colour options.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/accessories/ps5-console-covers/" class="fom">Find out more</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="ps5-console-cover-range-image-block-01-en-16feb22.svg" alt="PS5 Console Covers">
+                </figure>
+            </article>
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">Media Remote</div>
+                    <div class="contdesc">Conveniently control movies, streaming services and more on your PS5 console with an intuitive layout.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/accessories/media-remote/" class="fom">Find out more</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="media-remote-featured-hardware-image-block-01-en-11aug23.svg" alt="Media Remote">
+                </figure>
+            </article>
+            <article class="ads">
+                <div class="adscontent">
+                    <h2 class="ads-heading">Discover all PS5 consoles and accessories</h2>
+                    <div class="conthead">HD Camera</div>
+                    <div class="contdesc">Add yourself to your gameplay videos and broadcasts with smooth, sharp, full-HD capture.</div>
+                    <div class="ads-cta">
+                        <a href="https://www.playstation.com/en-in/accessories/hd-camera/" class="fom">Find out more</a>
+                    </div>
+                </div>
+                <figure>
+                    <img src="hd-camera-featured-hardware-image-block-01-en-11aug23.svg" alt="HD Camera">
+                </figure>
+            </article>
+        </div>
+
+        <!-- Thumbnail carousel row with flanking arrows -->
+        <div class="ads-thumb-row">
+            <button class="back" aria-label="Previous">&#8249;</button>
+            <div class="adscarousel">
+                <div class="ads-item-active">
+                    <img src="ps5.svg" alt="PS5 Console">
+                    <span>PS5 Console</span>
+                </div>
+                <div class="ads-item">
+                    <img src="dualsense.svg" alt="DualSense Wireless Controller">
+                    <span>DualSense™ Wireless Controller</span>
+                </div>
+                <div class="ads-item">
+                    <img src="PULSE-Elite-headset-.svg" alt="PULSE Elite Wireless Headset">
+                    <span>PULSE Elite™ Wireless Headset</span>
+                </div>
+                <div class="ads-item">
+                    <img src="PULSE-Explore-earbuds-image-block-01-en-08sep23.svg" alt="PULSE Explore Wireless Earbuds">
+                    <span>PULSE Explore™ Wireless Earbuds</span>
+                </div>
+                <div class="ads-item">
+                    <img src="dualsense-edge-featured-hardware-image-block-01-en-11aug23.svg" alt="DualSense Edge">
+                    <span>DualSense Edge</span>
+                </div>
+                <div class="ads-item">
+                    <img src="access-controller-featured-hardware-image-block-01-en-12oct23.svg" alt="Access Controller">
+                    <span>Access™ Controller</span>
+                </div>
+                <div class="ads-item">
+                    <img src="ps5-console-cover-range-image-block-01-en-16feb22.svg" alt="PS5 Console Covers">
+                    <span>PS5 Console Covers</span>
+                </div>
+                <div class="ads-item">
+                    <img src="media-remote-featured-hardware-image-block-01-en-11aug23.svg" alt="Media Remote">
+                    <span>Media Remote</span>
+                </div>
+                <div class="ads-item">
+                    <img src="hd-camera-featured-hardware-image-block-01-en-11aug23.svg" alt="HD Camera">
+                    <span>HD Camera</span>
+                </div>
+            </div>
+            <button class="forward" aria-label="Next">&#8250;</button>
+        </div>
+
+    </section>
+    <div class="blackdabba">
+        <h2 class="dabbatext">Great PS4 & PS5 games out now or coming soon</h2>
+        <div class="buttondabba">
+            <button class="release">New releases</button>
+            <button class="comingsoon">Coming soon</button>
+        </div>
+        <div class="releaseimg">
+            <a href="https://www.playstation.com/en-in/games/007-first-light/">
+                <img src="007.svg" alt="first light">
+                <span>007 First Light</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/call-of-duty-black-ops-7/">
+                <img src="cod.svg" alt="cod">
+                <span>Call of duty</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/death-stranding-2-on-the-beach/">
+                <img src="death stranding 2.svg" alt="death">
+                <span>Death Strandings 2</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/ea-sports-fc/">
+                <img src="fc26.svg" alt="fc26">
+                <span>EA Sports FC26</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/forza-horizon-5/">
+                <img src="forza.svg" alt="forza">
+                <span>Forza Horizon 5</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/ghost-of-yotei/">
+                <img src="ghost.svg" alt="ghost">
+                <span>Ghost of Yotei</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/lego-batman-legacy-of-the-dark-knight/">
+                <img src="batman.svg" alt="batman">
+                <span>Batman LEGO: The Dark Knight</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/marathon/">
+                <img src="marathon.svg" alt="marathon">
+                <span>Marathon</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/nba-2k/">
+                <img src="2k26.svg" alt="NBA">
+                <span>NBA 2K26</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/pragmata/">
+                <img src="pragmataa.svg" alt="pragma">
+                <span>Pragmata</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/resident-evil-requiem/">
+                <img src="resident evil.svg" alt="resident">
+                <span>Resident Evil</span>
+            </a>
+            <a href="https://www.playstation.com/en-in/games/saros/">
+                <img src="saros.svg" alt="saros">
+                <span>SAROS</span>
+            </a>
+        </div>
+    </div>
+   <div class="playstore">
+    
+    <div class="otherpart">
+        <img src="images/PlayStation_Store.svg" alt="pstore" class="playstorelogo">
+        <h2 class="mainplaystore">New savings on PlayStation Store</h2>
+        <p class="playstext">Explore the latest discounts and seasonal sales on great games and add-ons for PS5 and PS4.</p>
+        <a href="https://store.playstation.com/pages/deals?smcid=pdc:in-en:web-pdc-home:buttonblock-see-all-deals" class="details">See all details</a>
+
+    </div>
+    <a href="https://store.playstation.com/pages/deals" class="photo">
+        <img src="ps-store-evergreen-image-block-01-en-09aug22-converted-from-webp.svg" alt="playstore">
+    </a>
+   </div>
+   <div class="socialmedia">
+    <div class="social_text">Follow us on social media</div>
+   <div class="socialmedia_content">
+    <a href="https://twitter.com/PlayStationIN" class="twitter">
+        <img src="twitter-monochrome-icon-01-en-13may21-converted-from-webp.svg" class="twit" alt="twitter">
+    </a>
+    <a href="https://www.facebook.com/SonyPlaystationIndia" class="facebook">
+        <img src="facebook-monochrome-icon-01-en-13may21-converted-from-webp.svg" class="fb" alt="fbook">
+    </a>
+    <a href="https://www.instagram.com/playstation/" class="insta">
+        <img src="instagram-monochrome-icon-01-en-13may21-converted-from-webp.svg" class="ig" alt="insta">
+    </a>
+    <a href="https://www.youtube.com/channel/UClcQ90LedRcM_HFR-mZsENg" class="youtube">
+        <img src="youtube-monochrome-icon-01-en-13may21-converted-from-webp.svg" class="yt" alt="yt">
+    </a>
+   </div>
+   </div>
+</body>
+</html>
