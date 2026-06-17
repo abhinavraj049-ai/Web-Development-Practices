@@ -787,3 +787,664 @@ h2.ads-heading{
     
 
 }
+@media (min-width: 1601px) {
+  .playsads,
+  .ads-thumb-row,
+  .releaseimg,
+  .playstore {
+    max-width: 1400px;
+  }
+
+  .herotag {
+    font-size: 4.5rem;
+  }
+
+  h2.ads-heading {
+    font-size: 52px;
+  }
+
+  .dabbatext {
+    font-size: 50px;
+  }
+
+  .mainplaystore {
+    font-size: 3rem;
+  }
+
+  .releaseimg {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .carousel-item {
+    width: 420px;
+    height: 210px;
+  }
+
+  .adscarousel > div {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+
+@media (min-width: 1281px) and (max-width: 1600px) {
+  .playsads,
+  .ads-thumb-row {
+    max-width: 1200px;
+  }
+
+  .herotag {
+    font-size: 3.8rem;
+  }
+
+  .carousel-item {
+    width: 340px;
+    height: 170px;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .nav_links {
+    gap: 14px;
+  }
+
+  .nav_links a {
+    font-size: 13px;
+  }
+
+  .herotag {
+    font-size: 3rem;
+  }
+
+  .carousel-item {
+    width: 280px;
+    height: 140px;
+  }
+
+  h2.ads-heading {
+    font-size: 34px;
+  }
+
+  .ads {
+    padding: 40px 30px;
+  }
+
+  .releaseimg {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .playstore {
+    gap: 40px;
+    padding: 40px 30px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Navigation */
+  .nav_links {
+    gap: 10px;
+  }
+
+  .nav_links a {
+    font-size: 12px;
+  }
+
+  .nav_actions {
+    gap: 10px;
+    padding-right: 12px;
+  }
+
+  .signin {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+
+  .mega_search_bar {
+    right: 0;
+    width: 90%;
+    top: 70px;
+  }
+
+  /* Hero */
+  .ps-hero-banner {
+    height: 70vh;
+    min-height: 480px;
+  }
+
+  .hero {
+    padding: 8% 5% 100px 5%;
+  }
+
+  .herotag {
+    font-size: 2.6rem;
+  }
+
+  .herodesc {
+    font-size: 1.05rem;
+  }
+
+  .hero_content {
+    max-width: 420px;
+  }
+
+  /* Hero Carousel Thumbnails */
+  .hero-carousel {
+    gap: 10px;
+    padding: 15px 3%;
+    overflow-x: auto;
+  }
+
+  .carousel-item {
+    width: 200px;
+    height: 110px;
+    min-width: 180px;
+  }
+
+  /* Accessories Ads */
+  .playsads {
+    border-radius: 8px;
+  }
+
+  .ads {
+    padding: 40px 30px;
+    gap: 20px;
+  }
+
+  .adscontent {
+    padding-right: 20px;
+  }
+
+  h2.ads-heading {
+    font-size: 28px;
+  }
+
+  .conthead {
+    font-size: 20px;
+  }
+
+  .ads figure img {
+    height: 220px;
+  }
+
+  .adscarousel > div {
+    width: 130px;
+    height: 100px;
+  }
+
+  .adscarousel img {
+    width: 60px;
+    max-height: 60px;
+  }
+
+  /* Releases (Black Dabba) */
+  .blackdabba {
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+
+  .dabbatext {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
+  .releaseimg {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 18px;
+    padding: 20px;
+  }
+
+  /* PlayStation Store */
+  .playstore {
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .otherpart {
+    max-width: 350px;
+  }
+
+  .mainplaystore {
+    font-size: 2rem;
+  }
+
+  /* Social Media */
+  .social_text {
+    font-size: 34px;
+  }
+
+  .twit, .fb, .ig, .yt {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Footer */
+  .endpart {
+    min-height: 600px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Sony bar */
+  .sony {
+    height: 30px;
+    padding-right: 10px;
+  }
+
+  /* Navigation */
+  .navigation_bar {
+    height: 60px;
+  }
+
+  .nav_links {
+    display: none;
+  }
+
+  .playstation_logo {
+    height: 36px;
+    width: 36px;
+    margin-left: 15px;
+  }
+
+  .nav_actions {
+    gap: 10px;
+    padding-right: 12px;
+  }
+
+  .signin {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+
+  .mega_search_bar {
+    width: 100%;
+    right: 0;
+    top: 60px;
+    position: fixed;
+  }
+
+  .search_backdrop {
+    top: 90px;
+    height: calc(100vh - 90px);
+  }
+
+  /* Hero Section */
+  .ps-hero-banner {
+    height: 75vh;
+    min-height: 420px;
+  }
+
+  .hero {
+    padding: 10% 5% 80px 5%;
+  }
+
+  .herotag {
+    font-size: 2.2rem;
+  }
+
+  .herodesc {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+
+  .hero_content {
+    max-width: 100%;
+  }
+
+  .hero figure::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.3) 0%,
+      rgba(0,0,0,0.7) 70%,
+      rgba(0,0,0,0.85) 100%
+    );
+  }
+
+  /* Buttons */
+  .preorder, .wish, .learn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  /* Hero Carousel Thumbnails */
+  .hero-carousel {
+    overflow-x: auto;
+    gap: 10px;
+    padding: 12px 4%;
+    padding-bottom: 10px;
+  }
+
+  .carousel-item {
+    min-width: 160px;
+    width: 160px;
+    height: 100px;
+  }
+
+  /* Accessories Section */
+  .mainadstext {
+    width: 100%;
+    padding: 20px 15px 10px;
+  }
+
+  .mainadstext h1 {
+    font-size: 28px;
+  }
+
+  .ads {
+    flex-direction: column;
+    padding: 25px 16px;
+    gap: 0;
+  }
+
+  .adscontent {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  h2.ads-heading {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .conthead {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .contdesc {
+    font-size: 14px;
+  }
+
+  .ads figure {
+    justify-content: center;
+    flex: unset;
+    width: 100%;
+  }
+
+  .ads figure img {
+    height: auto;
+    max-height: 220px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .adscarousel {
+    padding: 12px;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .adscarousel > div {
+    width: 110px;
+    height: 90px;
+  }
+
+  .adscarousel img {
+    width: 55px;
+    max-height: 55px;
+  }
+
+  .back, .forward {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+
+  /* Releases (Black Dabba) */
+  .blackdabba {
+    min-height: auto;
+    padding-bottom: 40px;
+    padding-top: 25px;
+  }
+
+  .dabbatext {
+    font-size: 24px;
+    padding: 0 16px 10px;
+    line-height: 1.3;
+  }
+
+  .buttondabba {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0 10px;
+  }
+
+  .release, .comingsoon {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .releaseimg {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .releaseimg span {
+    font-size: 12px;
+  }
+
+  /* PlayStation Store */
+  .playstore {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 24px;
+    padding: 36px 16px;
+  }
+
+  .photo {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .photo img {
+    border-radius: 8px;
+    max-width: 90%;
+  }
+
+  .otherpart {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .playstorelogo {
+    width: 160px;
+    margin: 0 auto 16px auto;
+    display: block;
+  }
+
+  .mainplaystore {
+    font-size: 1.8rem;
+  }
+
+  .playstext {
+    font-size: 0.95rem;
+  }
+
+  .details {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Social Media */
+  .socialmedia {
+    padding: 36px 16px;
+    min-height: auto;
+  }
+
+  .social_text {
+    font-size: 26px;
+    padding-bottom: 24px;
+  }
+
+  .socialmedia_content {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 0;
+  }
+
+  .twit, .fb, .ig, .yt {
+    width: 65px;
+    height: 65px;
+  }
+
+  /* Footer / Endpart */
+  .endpart {
+    min-height: auto;
+    padding: 40px 16px;
+  }
+
+  .end_logo {
+    position: relative;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+/* ─── SMALL PHONES (≤ 480px) ─────────────────────────────── */
+@media (max-width: 480px) {
+  /* Hero */
+  .herotag {
+    font-size: 1.75rem;
+    letter-spacing: -0.5px;
+  }
+
+  .herodesc {
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+  }
+
+  /* Stack CTA buttons vertically */
+  .hero_content .preorder,
+  .hero_content .wish,
+  .hero_content .learn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 12px;
+  }
+
+  /* Hero carousel: show 2 at a time */
+  .carousel-item {
+    min-width: 140px;
+    width: 140px;
+    height: 88px;
+  }
+
+  /* Ads section */
+  h2.ads-heading {
+    font-size: 20px;
+  }
+
+  .fom, .buy {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* Releases grid: 2 columns */
+  .releaseimg {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .releaseimg span {
+    font-size: 11px;
+  }
+
+  /* Social icons: smaller */
+  .twit, .fb, .ig, .yt {
+    width: 52px;
+    height: 52px;
+  }
+
+  .social_text {
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+
+  /* Store section */
+  .mainplaystore {
+    font-size: 1.5rem;
+  }
+
+  .playstext {
+    font-size: 0.875rem;
+  }
+
+  /* Nav bar tighter */
+  .navigation_bar {
+    height: 56px;
+  }
+
+  .playstation_logo {
+    height: 30px;
+    width: 30px;
+    margin-left: 12px;
+  }
+
+  .signin {
+    font-size: 13px;
+    padding: 3px 8px;
+  }
+
+  /* adscarousel thumb */
+  .adscarousel > div {
+    width: 90px;
+    height: 80px;
+  }
+
+  .adscarousel img {
+    width: 45px;
+    max-height: 45px;
+  }
+
+  .back, .forward {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
+
+/* ─── EXTRA TINY (≤ 360px) ───────────────────────────────── */
+@media (max-width: 360px) {
+  .herotag {
+    font-size: 1.5rem;
+  }
+
+  .herodesc {
+    font-size: 0.85rem;
+  }
+
+  .releaseimg {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav_links a {
+    font-size: 11px;
+  }
+
+  .signin {
+    font-size: 12px;
+    padding: 2px 7px;
+  }
+
+  .mainplaystore {
+    font-size: 1.3rem;
+  }
+
+  .dabbatext {
+    font-size: 20px;
+  }
+
+  .twit, .fb, .ig, .yt {
+    width: 44px;
+    height: 44px;
+  }
+}
