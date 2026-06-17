@@ -44,7 +44,7 @@ html, body{
     width: 100%;
     z-index: 100;
     top: 0;
-
+    overflow: visible;
 }
 .playstation_logo{
     height: 45px;
@@ -53,17 +53,22 @@ html, body{
     align-items: flex-start;
     margin-top: 8px;
     margin-bottom: 8px;
+    flex-shrink: 0;
 }
 .navbar_content{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  position: relative;
 }
 .nav_links{
   display: flex;
   list-style: none;
   gap: 20px; 
   margin-left: 14px;
+  flex-shrink: 1;
+  overflow: hidden;
 }
 .nav_links a{
   text-decoration: none;
@@ -75,11 +80,13 @@ html, body{
 .nav_links a:hover{
   color: #0072ce; 
 }
-.nav_actions{
+.nav_actions {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-left: 840px;
+  margin-left: auto;
+  padding-right: 20px;
+  flex-shrink: 0;
 }
 .signin{
   background-color: #0072ce;
@@ -110,15 +117,18 @@ html, body{
     color: #0072ce;
 }
 .mega_search_bar {
-    position: absolute;
-    right: 24px;
-    top: 15px; 
-    height: 40px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 70px;
+    height: 50px;
     background-color: white;
     display: none; 
     align-items: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    z-index: 200; 
+    z-index: 200;
+    width: 100%;
+    max-width: 100vw;
 }
 .mega_search_bar.active {
     display: flex;
@@ -143,7 +153,8 @@ html, body{
     border: none;
     outline: none;
     padding: 0 15px;
-    width: 250px;
+    width: 100%;
+    min-width: 0;
     font-size: 14px;
 }
 .mega_search_submit {
@@ -163,10 +174,10 @@ html, body{
 /* page drop  */
 .search_backdrop {
     position: fixed;
-    top: 106px; 
+    top: 120px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 106px);
+    height: calc(100vh - 120px);
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 150;
     display: none; 
@@ -305,11 +316,20 @@ html, body{
     padding: 20px 5%;
     display: flex;
     gap: 15px;
-    z-index: 10; 
+    z-index: 10;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #000;
+}
+.hero-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .carousel-item {
     width: 360px;
+    min-width: 220px;
     height: 180px;
     border-radius: 10px;
     overflow: hidden;
@@ -318,6 +338,7 @@ html, body{
     opacity: 0.5; 
     transition: all 0.3s ease;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .carousel-item img {
@@ -566,11 +587,11 @@ h2.ads-heading{
     font-size: 42px;
     font-weight: 360;
 }
-.blackdabba{
-    width: 100%;
-    height: 1000px;
-    background-color: #111111;
-    padding-top: 30px;
+.blackdabba {
+  width: 100%;
+  min-height: 1000px; /* Changed from height to min-height */
+  background-color: #111111;
+  padding-top: 30px;
 }
 .dabbatext{
     text-align: center;
@@ -669,7 +690,8 @@ h2.ads-heading{
     margin: 50px auto;            
     padding: 20px 40px;
     gap: 60px;                    
-    font-family: sans-serif;      
+    font-family: sans-serif;
+    flex-wrap: wrap;
 }
 
 
@@ -697,7 +719,7 @@ h2.ads-heading{
     margin-bottom: 30px;
 }
 
-/* The Button */
+
 .details {
     display: inline-block;        
     background-color: #d53b00;
@@ -725,11 +747,11 @@ h2.ads-heading{
     height: auto;
     border-radius: 12px;         
 }
-.socialmedia{
-    width: 100%;
-    height: 500px;
-    background-color: #efeeee;
-    padding-top: 60px;
+.socialmedia {
+  width: 100%;
+  min-height: 500px; 
+  background-color: #efeeee;
+  padding-top: 60px;
 }
 .social_text{
     text-align: center;
@@ -738,15 +760,15 @@ h2.ads-heading{
     font-weight: 200;
     padding-bottom: 80px;
 }
-.socialmedia_content{
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 550px;
-    margin-right: 300px;
-    text-decoration: none;
-    margin-top: 80px;
+.socialmedia_content {
+  display: flex; 
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  text-decoration: none;
 }
+  
 .twit{
     width: 100px;
     height: 100px;
@@ -773,10 +795,10 @@ h2.ads-heading{
 .insta{
     text-decoration: none;
 }
-.endpart{
-    background-color: #0072ce;
-    width: 100%;
-    height: 900px;
+.endpart {
+  background-color: #0072ce;
+  width: 100%;
+  min-height: 900px; 
 }
 .end_logo{
     position: absolute;
@@ -787,6 +809,9 @@ h2.ads-heading{
     
 
 }
+
+
+
 @media (min-width: 1601px) {
   .playsads,
   .ads-thumb-row,
@@ -1038,6 +1063,11 @@ h2.ads-heading{
     height: 60px;
   }
 
+  .navbar_content {
+    width: 100%;
+    padding: 0;
+  }
+
   .nav_links {
     display: none;
   }
@@ -1049,25 +1079,33 @@ h2.ads-heading{
   }
 
   .nav_actions {
-    gap: 10px;
+    gap: 8px;
     padding-right: 12px;
   }
 
   .signin {
-    font-size: 14px;
+    font-size: 13px;
     padding: 4px 10px;
+    white-space: nowrap;
   }
 
   .mega_search_bar {
     width: 100%;
     right: 0;
+    left: 0;
     top: 60px;
     position: fixed;
   }
 
+  .search_dropdown select {
+    max-width: 100px;
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
   .search_backdrop {
-    top: 90px;
-    height: calc(100vh - 90px);
+    top: 110px;
+    height: calc(100vh - 110px);
   }
 
   /* Hero Section */
